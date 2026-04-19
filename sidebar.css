@@ -85,6 +85,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
+  flex-wrap: wrap;
   padding: 16px 16px 12px;
   border-bottom: 1px solid var(--cgpn-border);
   background: var(--cgpn-bg-strong);
@@ -105,6 +106,14 @@
   line-height: 1.2;
 }
 
+.cgpn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.cgpn-export,
 .cgpn-collapse {
   padding: 7px 10px;
   border: 1px solid var(--cgpn-border);
@@ -115,9 +124,28 @@
   font: inherit;
 }
 
+.cgpn-export {
+  border-color: rgba(16, 163, 127, 0.22);
+  background: var(--cgpn-accent-soft);
+  color: var(--cgpn-accent);
+  font-weight: 600;
+}
+
+.cgpn-export:disabled,
+.cgpn-collapse:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.cgpn-export:hover:not(:disabled),
 .cgpn-collapse:hover {
   background: var(--cgpn-surface-hover);
   color: var(--cgpn-text);
+}
+
+.cgpn-export:hover:not(:disabled) {
+  border-color: rgba(16, 163, 127, 0.32);
+  color: var(--cgpn-accent);
 }
 
 .cgpn-empty {

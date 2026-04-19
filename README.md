@@ -13,6 +13,7 @@ ChatGPT Prompt Navigator is a lightweight browser extension that adds a prompt s
 - Scrolls to a selected turn when you click an item
 - Highlights the prompt nearest to your current scroll position
 - Remembers the sidebar collapsed state per conversation
+- Downloads the full visible conversation as a standalone HTML page
 
 ## Browser Support
 
@@ -66,7 +67,7 @@ Temporary Firefox installs are removed when Firefox restarts unless the extensio
 
 - Add packaged browser icons and store-ready metadata
 - Support filtering or searching prompts within the sidebar
-- Add export or copy helpers for prompt lists
+- Add export formats beyond HTML
 
 ## License
 
