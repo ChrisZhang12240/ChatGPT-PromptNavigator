@@ -27,14 +27,14 @@ ChatGPT Prompt Navigator is a lightweight browser extension that adds a prompt s
 1. Open `edge://extensions`
 2. Enable `Developer mode`
 3. Click `Load unpacked`
-4. Select this folder: `chatgpt-prompt-navigator-edge`
+4. Select this folder: `ChatGPT-PromptNavigator`
 
 ### Chrome
 
 1. Open `chrome://extensions`
 2. Enable `Developer mode`
 3. Click `Load unpacked`
-4. Select this folder: `chatgpt-prompt-navigator-edge`
+4. Select this folder: `ChatGPT-PromptNavigator`
 
 ### Firefox
 
