@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Prompt Navigator",
+  "version": "0.1.0",
+  "description": "Adds a sidebar to ChatGPT that lists your prompts and jumps to them in long conversations.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "chatgpt-prompt-navigator@example.local",
+      "strict_min_version": "121.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "sidebar.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
