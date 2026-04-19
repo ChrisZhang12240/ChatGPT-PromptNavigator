@@ -18,6 +18,11 @@
   color: var(--cgpn-text);
 }
 
+#cgpn-root.cgpn-root-collapsed {
+  top: auto;
+  bottom: 16px;
+}
+
 @media (prefers-color-scheme: dark) {
   #cgpn-root {
     --cgpn-bg: rgba(33, 33, 33, 0.94);

@@ -756,6 +756,7 @@
     const collapsed = window.localStorage.getItem(`${STORAGE_KEY}:${currentChatKey}`) === "1";
 
     function applyCollapsed(nextCollapsed) {
+      root.classList.toggle("cgpn-root-collapsed", nextCollapsed);
       shell.classList.toggle("cgpn-collapsed", nextCollapsed);
       toggle.setAttribute("aria-expanded", String(!nextCollapsed));
       window.localStorage.setItem(`${STORAGE_KEY}:${currentChatKey}`, nextCollapsed ? "1" : "0");
